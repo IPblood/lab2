@@ -2,6 +2,9 @@ import java.util.ArrayList;
 
 public class ThreadCheckArray implements Runnable 
 {
+	/**
+	 * Variables
+	 */
 	private boolean flag;
 	private boolean [] winArray;
 	SharedData sd;
@@ -9,6 +12,10 @@ public class ThreadCheckArray implements Runnable
 	private ArrayList<Integer> array;
 	int b;
 	
+	/**
+	 * Contructor for ThreadCheckArray
+	 * @param sd
+	 */
 	public ThreadCheckArray(SharedData sd) 
 	{
 		this.sd = sd;	
@@ -20,6 +27,11 @@ public class ThreadCheckArray implements Runnable
 		winArray = new boolean[array.size()];
 	}
 	
+	/**
+	 * Function for calculation of who won between the threads
+	 * @param n
+	 * @param b
+	 */
 	void rec(int n, int b)
 	{
 		synchronized (sd) 
@@ -53,6 +65,9 @@ public class ThreadCheckArray implements Runnable
 		rec(n-1, b);
 	}
 
+	/**
+	 * Run function to run the threads
+	 */
 	public void run() {
 		if (array.size() != 1)
 			if (Thread.currentThread().getName().equals("thread1"))
