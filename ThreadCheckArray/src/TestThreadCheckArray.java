@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TestThreadCheckArray {
+public class TestThreadCheckArray { 
 	/**
 	 * Main function
 	 * @param args

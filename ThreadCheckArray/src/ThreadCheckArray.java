@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ThreadCheckArray implements Runnable 
 {
-	/**
+	/** 
 	 * Variables
 	 */
 	private boolean flag;

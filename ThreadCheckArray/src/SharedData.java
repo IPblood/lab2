@@ -6,7 +6,7 @@ public class SharedData
 	private ArrayList<Integer> array;
 	private boolean [] winArray;
 	private boolean flag;
-	private final int b;
+	private final int b; 
 	
 	/**
 	 * Constructor for SharedData
