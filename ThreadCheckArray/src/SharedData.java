@@ -5,12 +5,15 @@ public class SharedData
 	private boolean flag;
 	private final int b;
 	
+	// test1
 	public SharedData(int[] array, int b) {
 		
 		this.array = array;
 		this.b = b;
 	}
 
+
+	// this is a test
 	public boolean[] getWinArray() 
 	{
 		return winArray;
